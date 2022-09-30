@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6576DBB28E77E150069D63E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6576DBA28E77E150069D63E /* WelcomeViewController.swift */; };
+		F6576DBE28E787EB0069D63E /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6576DBD28E787EB0069D63E /* Credentials.swift */; };
+		F6576DC128E788DF0069D63E /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6576DC028E788DF0069D63E /* AppConstants.swift */; };
+		F6576DC328E78EB00069D63E /* PasswordMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6576DC228E78EB00069D63E /* PasswordMode.swift */; };
+		F6576DC528E794830069D63E /* AppAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6576DC428E794830069D63E /* AppAlert.swift */; };
 		F6DC8DC028E76208006663A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC8DBF28E76208006663A9 /* AppDelegate.swift */; };
 		F6DC8DC228E76208006663A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC8DC128E76208006663A9 /* SceneDelegate.swift */; };
-		F6DC8DC428E76208006663A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC8DC328E76208006663A9 /* ViewController.swift */; };
+		F6DC8DC428E76208006663A9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC8DC328E76208006663A9 /* LoginViewController.swift */; };
 		F6DC8DC728E76208006663A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DC8DC528E76208006663A9 /* Main.storyboard */; };
 		F6DC8DC928E7620A006663A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6DC8DC828E7620A006663A9 /* Assets.xcassets */; };
 		F6DC8DCC28E7620A006663A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DC8DCA28E7620A006663A9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6576DBA28E77E150069D63E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F6576DBD28E787EB0069D63E /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		F6576DC028E788DF0069D63E /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		F6576DC228E78EB00069D63E /* PasswordMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordMode.swift; sourceTree = "<group>"; };
+		F6576DC428E794830069D63E /* AppAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAlert.swift; sourceTree = "<group>"; };
 		F6DC8DBC28E76208006663A9 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6DC8DBF28E76208006663A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6DC8DC128E76208006663A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F6DC8DC328E76208006663A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F6DC8DC328E76208006663A9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F6DC8DC628E76208006663A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6DC8DC828E7620A006663A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6DC8DCB28E7620A006663A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +47,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6576DB928E77DF10069D63E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6DC8DC328E76208006663A9 /* LoginViewController.swift */,
+				F6576DBA28E77E150069D63E /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F6576DBC28E787DD0069D63E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6576DBD28E787EB0069D63E /* Credentials.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F6576DBF28E788D10069D63E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F6576DC028E788DF0069D63E /* AppConstants.swift */,
+				F6576DC228E78EB00069D63E /* PasswordMode.swift */,
+				F6576DC428E794830069D63E /* AppAlert.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		F6DC8DB328E76208006663A9 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +93,11 @@
 		F6DC8DBE28E76208006663A9 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
+				F6576DBF28E788D10069D63E /* Common */,
+				F6576DBC28E787DD0069D63E /* Model */,
+				F6576DB928E77DF10069D63E /* ViewControllers */,
 				F6DC8DBF28E76208006663A9 /* AppDelegate.swift */,
 				F6DC8DC128E76208006663A9 /* SceneDelegate.swift */,
-				F6DC8DC328E76208006663A9 /* ViewController.swift */,
 				F6DC8DC528E76208006663A9 /* Main.storyboard */,
 				F6DC8DC828E7620A006663A9 /* Assets.xcassets */,
 				F6DC8DCA28E7620A006663A9 /* LaunchScreen.storyboard */,
@@ -138,8 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6DC8DC428E76208006663A9 /* ViewController.swift in Sources */,
+				F6DC8DC428E76208006663A9 /* LoginViewController.swift in Sources */,
+				F6576DC128E788DF0069D63E /* AppConstants.swift in Sources */,
+				F6576DC528E794830069D63E /* AppAlert.swift in Sources */,
+				F6576DBB28E77E150069D63E /* WelcomeViewController.swift in Sources */,
+				F6576DBE28E787EB0069D63E /* Credentials.swift in Sources */,
 				F6DC8DC028E76208006663A9 /* AppDelegate.swift in Sources */,
+				F6576DC328E78EB00069D63E /* PasswordMode.swift in Sources */,
 				F6DC8DC228E76208006663A9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +350,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +378,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

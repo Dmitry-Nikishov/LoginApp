@@ -57,6 +57,8 @@ final class LoginViewController: UIViewController {
                     controller: self,
                     notificationText: "Invalid credentials"
                 )
+                
+                cleanTextFields()
             }
         }
         
@@ -68,16 +70,21 @@ final class LoginViewController: UIViewController {
             return
         }
         
+        welcomeVC.isModalInPresentation = true
         welcomeVC.userName = userNameTF.text ?? ""
     }
 
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        userNameTF.text = ""
-        passwordTF.text = ""
+        cleanTextFields()
     }
     
     @objc private func togglePasswordMode() {
         passwordMode = passwordMode == .shown ? .hidden : .shown
+    }
+    
+    private func cleanTextFields() {
+        userNameTF.text = ""
+        passwordTF.text = ""
     }
     
     private func getCredentialsFromUserInput() -> Credentials? {

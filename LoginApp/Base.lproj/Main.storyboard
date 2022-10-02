@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1S3-ps-DcP">
-                                <rect key="frame" x="16" y="180" width="288" height="120"/>
+                                <rect key="frame" x="16" y="120" width="288" height="120"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ujs-NM-A6N">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="60"/>
@@ -81,7 +81,7 @@
                         <constraints>
                             <constraint firstItem="1S3-ps-DcP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-32" id="1ua-kj-nA0"/>
                             <constraint firstItem="1S3-ps-DcP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Bp1-na-HFo"/>
-                            <constraint firstItem="1S3-ps-DcP" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Um2-ZB-GhA"/>
+                            <constraint firstItem="1S3-ps-DcP" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.75" id="Um2-ZB-GhA"/>
                             <constraint firstItem="1S3-ps-DcP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="qtz-Hg-1ax"/>
                         </constraints>
                     </view>

@@ -8,12 +8,15 @@
 import UIKit
 
 class AppAlert {
-    static func showAppNotification(controller : UIViewController,
-                                    notificationText : String)
-    {
-        let alert = UIAlertController(title: AppCommonStrings.appName,
-                                      message: notificationText,
-                                      preferredStyle: .alert)
+    static func showAppNotification(
+        controller : UIViewController,
+        notificationText : String
+    ) {
+        let alert = UIAlertController(
+            title: AppCommonStrings.appName,
+            message: notificationText,
+            preferredStyle: .alert
+        )
     
         let ok = UIAlertAction(title: "OK", style: .default)
     

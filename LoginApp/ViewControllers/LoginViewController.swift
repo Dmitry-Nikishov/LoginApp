@@ -49,8 +49,7 @@ final class LoginViewController: UIViewController {
     ) -> Bool {
         
         if identifier == "loginToWelcomeSegue" {
-            if let uiCredentials = getCredentialsFromUserInput(),
-                   uiCredentials == AppCredentials.defaultCredentials {
+            if checkInputCredentials() {
                 return true
             } else {
                 AppAlert.showAppNotification(
@@ -85,6 +84,15 @@ final class LoginViewController: UIViewController {
     private func cleanTextFields() {
         userNameTF.text = ""
         passwordTF.text = ""
+    }
+    
+    private func checkInputCredentials() -> Bool {
+        if let uiCredentials = getCredentialsFromUserInput(),
+               uiCredentials == AppCredentials.defaultCredentials {
+            return true
+        } else {
+            return false
+        }
     }
     
     private func getCredentialsFromUserInput() -> Credentials? {

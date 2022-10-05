@@ -65,9 +65,8 @@ final class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else {
-            return
-        }
+        guard let tabBarVC = segue.destination as? UITabBarController else { return }
+        guard let welcomeVC = tabBarVC.viewControllers?.first as? WelcomeViewController else { return }
         
         welcomeVC.isModalInPresentation = true
         welcomeVC.userName = userNameTF.text ?? ""
